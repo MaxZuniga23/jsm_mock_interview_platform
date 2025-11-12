@@ -33,9 +33,9 @@ export async function POST(request: Request) {
             techstack: techstack.split(','),
             questions: JSON.parse(questions),
             userId: userid,
-            finalized: true,
-            converImage: getRandomInterviewCover(),
-            createdAt: new Date().toISOString()
+            // finalized: true,
+            // converImage: getRandomInterviewCover(),
+            // createdAt: new Date().toISOString()
         }
 
         await db.collection("interviews").add(interview);
